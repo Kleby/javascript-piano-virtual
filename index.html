@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Virtual</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="controle">
+            <h2 class="title">Piano Virtual</h2>
+            <div class="coluna volume">
+                <span>Volume</span>
+                <input type="range" id="volume" min="0" max="1" value="0.5" step="0.05">
+            </div>
+            <div class="coluna seleciona-tecla">
+                <span>Teclas</span>
+                <input type="checkbox" checked class="selecionar" id="selecionarTeclas">
+            </div>
+        </div>
+        <ul class="tecla__container" id="teclas">
+            <li data-tecla="a" class="tecla branco"><span>a</span></li>
+            <li data-tecla="w" class="tecla preto" ><span>w</span></li>
+            <li data-tecla="s" class="tecla branco"><span>s</span></li>
+            <li data-tecla="e" class="tecla preto" ><span>e</span></li>
+            <li data-tecla="d" class="tecla branco"><span>d</span></li>
+            <li data-tecla="r" class="tecla preto"><span>r</span></li>
+            <li data-tecla="f" class="tecla branco"><span>f</span></li>
+            <li data-tecla="t" class="tecla preto"><span>t</span></li>
+            <li data-tecla="g" class="tecla branco"><span>g</span></li>
+            <li data-tecla="y" class="tecla preto"><span>y</span></li>
+            <li data-tecla="h" class="tecla branco"><span>h</span></li>
+            <li data-tecla="u" class="tecla preto"><span>u</span></li>
+            <li data-tecla="j" class="tecla branco"><span>j</span></li>
+            <li data-tecla="i" class="tecla preto"><span>i</span></li>
+            <li data-tecla="k" class="tecla branco"><span>k</span></li>
+            <li data-tecla="o" class="tecla preto"><span>o</span></li>
+            <li data-tecla="l" class="tecla branco"><span>l</span></li>
+        </ul>
+    </div>
+
+    <script defer src="src/scripts/engine.js"></script>
+</body>
+
+</html>
